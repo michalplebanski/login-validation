@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Login validation</title>
+</head>
+<body>
+	<main>
+		<h2><span class="green">P</span>ortrait <span class="green">L</span>ogin <span class="green">F</span>orm</h2>
+		<div class="container">
+			<div class="container__img">
+				<img src="img/img.png">
+				<p>Michał Plebański</p>
+			</div>
+			<div class="container__inputs">
+				<p id="wrong-text" class="wrong-text"></p>
+				<div class="container__input-form">
+					<input type="text" id="username-input" placeholder="Username">
+					<span class="icon">
+						<i class="far fa-user"></i>
+					</span>
+				</div>
+				<div class="container__input-form">
+					<input type="password" id="password-input" placeholder="Passowrd">
+					<span class="icon">
+						<i class="fas fa-key"></i>
+					</span>
+				</div>
+				<div class="container__inputs--checkbox">
+					<input type="checkbox" class="checkbox">
+					<p>Remember me</p>
+				</div>
+			</div>
+			<div class="container__button">
+				<button id="btn">Login</button>
+			</div>
+		</div>
+		<footer>Michał Plebański. All rights reserved</footer>
+	</main>
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

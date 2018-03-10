@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Lato');
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+main {
+	min-height: 100vh;
+	min-width: 100vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	background-image: url("https://cdn.pixabay.com/photo/2017/10/25/23/33/night-night-clouds-2889722_960_720.jpg");
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+}
+
+main > h2 {
+	color: #fff;
+	font-size: 6vh;
+	font-family: 'Dancing Script', cursive;
+	letter-spacing: 0.8vw;
+}
+
+.green {
+	color: #34c14e;
+}
+
+.container {
+	min-height: 70vh;
+	min-width: 40vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.4);
+	font-family: "Lato", sans-serif;
+}
+
+.container > div {
+	margin: 2vh 0;
+}
+
+.container__img {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.container__img img {
+	height: 14vh;
+	width: 7vw;
+	border: 0.4vh solid #fff;
+	border-radius: 50%;
+}
+
+.container__img p {
+	margin-bottom: 0;
+	color: #fff;
+	font-size: 3vh;
+}
+
+.container__inputs {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+.container__inputs .wrong-text {
+	position: absolute;
+	top: -6vh;
+	left: 2vh;
+	color: #ff0000;
+	font-size: 2.5vh;
+}
+
+.container__inputs > div {
+	margin: 1vh 0;
+}
+
+.container__input-form {
+	min-height: 5.5vh;
+	width: 30vw;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #fff;
+	border-radius: 1vh;
+}
+
+.container__input-form input {
+	min-width: 24vw;
+	font-size: 2.5vh;
+	padding-left: 1vw;
+	border: none;
+}
+
+.container__input-form input:focus {
+	outline: none;
+}
+
+.container__input-form .icon {
+	padding: 0 1vw;
+	color: #bcb5b5;
+	font-size: 3vh;
+	border-left: 0.1vh solid #bcb5b5;
+}
+
+.container__inputs--checkbox {
+	width: 32vw;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+.container__inputs--checkbox input {
+	height: 3vh;
+	width: 3vw;
+	cursor: pointer;
+}
+
+.container__inputs--checkbox p {
+	margin: 0.5vh 0;
+	color: #fff;
+	font-size: 2.5vh;
+}
+
+.container__button button {
+	min-height: 7vh;
+	min-width: 30vw;
+	background-color: #34c14e;
+	color: #fff;
+	font-size: 3vh;
+	text-transform: uppercase;
+	cursor: pointer;
+	border: none;
+	border-radius: 1vh;
+}
+
+footer {
+	color: #fff;
+	font-size: 2vh;
+	text-align: center;
+}
+
+@media (max-width: 764px) {
+
+	.container {
+		min-width: 50vw;
+	}
+
+	.container__img img {
+		width: 10vw;
+	}
+
+	.container__input-form {
+		width: 40vw;
+	}
+
+	.container__input-form input {
+		min-width: 35vw;
+	}
+
+	.container__inputs--checkbox {
+		width: 42vw;
+	}
+
+	.container__button button {
+		min-width: 40vw;
+	}
+}
+
+@media (max-width: 564px) {
+
+	.container {
+		min-width: 70vw;
+	}
+
+	.container__img img {
+		width: 15vw;
+	}
+
+	.container__input-form {
+		width: 60vw;
+	}
+
+	.container__input-form input {
+		min-width: 53vw;
+	}
+
+	.container__inputs--checkbox {
+		width: 62vw;
+	}
+
+	.container__button button {
+		min-width: 60vw;
+	}
+}
